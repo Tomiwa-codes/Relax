@@ -14,26 +14,29 @@ class _HomePageState extends State<HomePage> {
         body: Column(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-         Center(child:Image.asset(
-           "assets/images/tomiwa.jpg",
-           width: 60,
-           height: 80,
-           fit: BoxFit.cover,
-         ), ),
-         SizedBox(height: 20),
+        Center(
+          child: Image.asset(
+            "assets/images/relax.jpeg",
+            width: 60,
+            height: 80,
+            fit: BoxFit.cover,
+          ),
+        ),
+        SizedBox(height: 20),
         Text(
           "Welcome to Relaxify!",
           style: TextStyle(
               color: Colors.black, fontSize: 20, fontWeight: FontWeight.bold),
         ),
         const SizedBox(height: 20),
-        SizedBox(width: MediaQuery.of(context).size.width * 8,
-        child: Text(
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus euismod lacus, pharetra dui. ",
-          textAlign: TextAlign.center,
-          style: TextStyle(color: Colors.black, fontSize: 16),
-          textDirection: TextDirection.ltr,
-        ),
+        SizedBox(
+          width: MediaQuery.of(context).size.width * 8,
+          child: Text(
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus euismod lacus, pharetra dui. ",
+            textAlign: TextAlign.center,
+            style: TextStyle(color: Colors.black, fontSize: 16),
+            textDirection: TextDirection.ltr,
+          ),
         ),
         SizedBox(height: 18),
         Container(
@@ -41,7 +44,7 @@ class _HomePageState extends State<HomePage> {
           width: 188,
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(10),
-              color: Colors.pink,
+            color: Colors.pink,
           ),
           child: Center(
               child: Text(
